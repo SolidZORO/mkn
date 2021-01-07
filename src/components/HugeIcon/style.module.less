@@ -1,0 +1,19 @@
+@import '../../styles/variables.less';
+
+.comp-wrapper {
+  transition: all 0.3s;
+
+  svg {
+    transition: all 0.3s;
+    font-size: 170px;
+  }
+}
+
+// DARK-MODE
+.comp-wrapper--always-dark-mode,
+:global(.@{THEME--DARK}) .comp-wrapper {
+  svg {
+    transition: all 0.3s;
+    color: var(--text-color--dark);
+  }
+}

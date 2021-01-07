@@ -1,0 +1,57 @@
+@import './variables.less';
+@import './variables-css.less';
+
+html,
+body {
+  width: 100%;
+}
+
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  font-size: 14px;
+  background-color: var(--primary-color-bg);
+}
+
+html,
+body,
+#root,
+#__next,
+.app {
+  height: 100%;
+}
+
+.theme-dark {
+  background-color: var(--primary-color-bg--dark);
+  transition: all 0.5s;
+
+  body {
+    background-color: var(--primary-color-bg--dark);
+    transition: all 0.5s;
+  }
+}
+
+.icon-spin {
+  -webkit-animation: icon-spin 0.7s infinite linear;
+  animation: icon-spin 0.7s infinite linear;
+}
+
+@-webkit-keyframes icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}

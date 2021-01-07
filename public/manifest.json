@@ -1,0 +1,23 @@
+{
+  "name": "mkn",
+  "short_name": "mkn",
+  "description": "mkn (Next.js)",
+  "orientation": "portrait",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "favicons/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "favicons/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

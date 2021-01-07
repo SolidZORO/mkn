@@ -1,0 +1,24 @@
+@import '../../styles/variables.less';
+
+.layout-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-header {
+  padding-top: 50px;
+}
+
+.layout-container {
+  flex: 1;
+}
+
+.layout-footer {
+  padding-bottom: 50px;
+}
+
+// DARK-MODE
+.layout-wrapper--always-dark-mode,
+:global(.@{THEME--DARK}) .layout-wrapper {
+}
