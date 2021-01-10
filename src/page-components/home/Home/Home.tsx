@@ -13,12 +13,10 @@ interface IProps extends IPageProps {
   alwaysDarkMode?: boolean;
 }
 
-export default function Home(props: IProps) {
-  return (
-    <PageContainer className={cx(styles['comp-wrapper'], props.className)}>
-      <HtmlMeta title="Home" />
+export const Home: React.FC<IProps> = (props) => (
+  <PageContainer className={cx(styles['comp-wrapper'], props.className)}>
+    <HtmlMeta title="Home" />
 
-      <HugeIcon icon={<FiTriangle />} />
-    </PageContainer>
-  );
-}
+    <HugeIcon icon={<FiTriangle />} />
+  </PageContainer>
+);

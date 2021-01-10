@@ -14,7 +14,7 @@ interface IProps {
   alwaysDarkMode?: boolean;
 }
 
-export default function HeaderNavbar(props: IProps) {
+export const HeaderNavbar: React.FC<IProps> = (props) => {
   const router = useRouter();
 
   const navs = [
@@ -55,4 +55,4 @@ export default function HeaderNavbar(props: IProps) {
       ))}
     </div>
   );
-}
+};

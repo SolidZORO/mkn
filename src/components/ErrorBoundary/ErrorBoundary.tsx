@@ -14,7 +14,7 @@ interface IState {
 
 // const CATCH_HAS_REFRESH_URL_PARAM = '____ErrorBoundary';
 
-export default class ErrorBoundary extends React.Component<IProps, IState> {
+export class ErrorBoundary extends React.Component<IProps, IState> {
   static getDerivedStateFromError() {
     return { hasError: true };
   }

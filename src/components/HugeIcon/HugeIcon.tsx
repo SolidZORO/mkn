@@ -11,8 +11,7 @@ interface IProps {
   alwaysDarkMode?: boolean;
 }
 
-export default function HugeIcon(props: IProps) {
-  return (
+export const HugeIcon: React.FC<IProps> = (props) => (
     <div
       className={cx(
         styles['comp-wrapper'],
@@ -24,4 +23,3 @@ export default function HugeIcon(props: IProps) {
       {props.icon}
     </div>
   );
-}

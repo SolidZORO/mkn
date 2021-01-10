@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
-export { default as LazyLoadingSpin } from './LazyLoadingSpin/LazyLoadingSpin';
-export { default as HeaderNavbar } from './HeaderNavbar/HeaderNavbar';
-export { default as HtmlMeta } from './HtmlMeta/HtmlMeta';
-export { default as PageContainer } from './PageContainer/PageContainer';
-export { default as FooterNav } from './FooterNav/FooterNav';
-export { default as HugeIcon } from './HugeIcon/HugeIcon';
-export { default as ErrorBoundary } from './ErrorBoundary/ErrorBoundary';
+export { LazyLoadingSpin } from './LazyLoadingSpin/LazyLoadingSpin';
+export { HeaderNavbar } from './HeaderNavbar/HeaderNavbar';
+export { HtmlMeta } from './HtmlMeta/HtmlMeta';
+export { PageContainer } from './PageContainer/PageContainer';
+export { FooterNav } from './FooterNav/FooterNav';
+export { HugeIcon } from './HugeIcon/HugeIcon';
+export { ErrorBoundary } from './ErrorBoundary/ErrorBoundary';

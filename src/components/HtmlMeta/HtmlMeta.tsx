@@ -10,7 +10,7 @@ interface IProps {
   alwaysDarkMode?: boolean;
 }
 
-export default function HtmlMeta(props: IProps) {
+export const HtmlMeta: React.FC<IProps> = (props) => {
   const siteName = props.disableSiteName ? '' : ` - mkn`;
 
   return (
@@ -21,4 +21,4 @@ export default function HtmlMeta(props: IProps) {
       </title>
     </Helmet>
   );
-}
+};

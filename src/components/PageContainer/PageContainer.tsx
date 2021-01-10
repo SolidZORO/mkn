@@ -11,17 +11,15 @@ interface IProps {
   alwaysDarkMode?: boolean;
 }
 
-export default function PageContainer(props: IProps) {
-  return (
-    <div
-      className={cx(
-        styles['comp-wrapper'],
-        { [styles['comp-wrapper--always-dark-mode']]: props.alwaysDarkMode },
-        props.className,
-      )}
-      style={props.style}
-    >
-      {props.children}
-    </div>
-  );
-}
+export const PageContainer: React.FC<IProps> = (props) => (
+  <div
+    className={cx(
+      styles['comp-wrapper'],
+      { [styles['comp-wrapper--always-dark-mode']]: props.alwaysDarkMode },
+      props.className,
+    )}
+    style={props.style}
+  >
+    {props.children}
+  </div>
+);
