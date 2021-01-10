@@ -1,2 +1,5 @@
 node_modules
 *.md
+
+/tsconfig.json
+/tsconfig.extend.json
