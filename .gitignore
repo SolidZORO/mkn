@@ -27,10 +27,16 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env*
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+!.env.example
+!.env
+!.env.development
+!.env.test
+!.env.production
 
 # vercel
 .vercel
@@ -69,12 +75,6 @@ tsconfig.tsbuildinfo
 # Lols
 logs
 *.log
-
-# env
-.env*
-!.env.example
-_env*.js
-!_env.example.js
 
 # IDEs
 .idea
