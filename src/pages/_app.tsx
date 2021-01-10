@@ -32,7 +32,7 @@ export default function CustomApp({ Component, pageProps }: any) {
 
   return (
     <ErrorBoundary>
-      <div className="app">
+      <div id="root">
         <HelmetProvider>{layoutDom}</HelmetProvider>
       </div>
     </ErrorBoundary>

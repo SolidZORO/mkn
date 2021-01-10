@@ -18,5 +18,6 @@ export const About: React.FC<IProps> = (props) => (
     <HtmlMeta title="About" />
 
     <HugeIcon icon={<FiPercent />} />
+    {JSON.stringify(process.env.NEXT_PUBLIC_SITE_NAME)}
   </PageContainer>
 );

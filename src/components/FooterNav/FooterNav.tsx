@@ -1,6 +1,8 @@
 import React from 'react';
 import cx from 'classnames';
 
+import { pkgConfig, envConfig } from '@/configs';
+
 import styles from './style.module.less';
 
 interface IProps {
@@ -20,9 +22,13 @@ export const FooterNav: React.FC<IProps> = (props) => (
     style={props.style}
   >
     © {new Date().getFullYear()}
-    <a href="https://github.com/SolidZORO/mkn" target="_blank" rel="noreferrer">
-      mkn
+    <a
+      href={`https://github.com/SolidZORO/${pkgConfig.name}`}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {envConfig.NEXT_PUBLIC_SITE_NAME}
     </a>{' '}
-    by Jason
+    by {pkgConfig.author.split(' ')[0]}
   </div>
 );

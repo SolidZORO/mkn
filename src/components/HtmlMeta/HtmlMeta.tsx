@@ -1,6 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
+import { envConfig } from '@/configs';
+
 interface IProps {
   title: React.ReactNode;
   disableSiteName?: boolean;
@@ -11,7 +13,9 @@ interface IProps {
 }
 
 export const HtmlMeta: React.FC<IProps> = (props) => {
-  const siteName = props.disableSiteName ? '' : ` - mkn`;
+  const siteName = props.disableSiteName
+    ? ''
+    : ` - ${envConfig.NEXT_PUBLIC_SITE_NAME}`;
 
   return (
     <Helmet>
