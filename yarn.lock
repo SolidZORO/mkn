@@ -2137,10 +2137,10 @@ eslint-visitor-keys@^2.0.0:
   resolved "https://registry.npm.taobao.org/eslint-visitor-keys/download/eslint-visitor-keys-2.0.0.tgz?cache=0&sync_timestamp=1597435193381&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-visitor-keys%2Fdownload%2Feslint-visitor-keys-2.0.0.tgz#21fdc8fbcd9c795cc0321f0563702095751511a8"
   integrity sha1-If3I+82ceVzAMh8FY3AglXUVEag=
 
-eslint@^7.18.0:
-  version "7.18.0"
-  resolved "https://registry.npm.taobao.org/eslint/download/eslint-7.18.0.tgz?cache=0&sync_timestamp=1610751984223&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint%2Fdownload%2Feslint-7.18.0.tgz#7fdcd2f3715a41fe6295a16234bd69aed2c75e67"
-  integrity sha1-f9zS83FaQf5ilaFiNL1prtLHXmc=
+eslint@^7.19.0:
+  version "7.19.0"
+  resolved "https://registry.npm.taobao.org/eslint/download/eslint-7.19.0.tgz#6719621b196b5fad72e43387981314e5d0dc3f41"
+  integrity sha1-ZxliGxlrX61y5DOHmBMU5dDcP0E=
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@eslint/eslintrc" "^0.3.0"
@@ -3524,12 +3524,13 @@ needle@^2.5.2:
     iconv-lite "^0.4.4"
     sax "^1.2.4"
 
-next-plugin-antd-less@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.npm.taobao.org/next-plugin-antd-less/download/next-plugin-antd-less-0.1.4.tgz#baac50e1f6ba93d678df3774e79d008f1fe1e5cc"
-  integrity sha1-uqxQ4fa6k9Z43zd0550Ajx/h5cw=
+next-plugin-antd-less@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.npm.taobao.org/next-plugin-antd-less/download/next-plugin-antd-less-0.2.0.tgz#e5dc06839824617c314c0cf0ca7fad3c38a02220"
+  integrity sha1-5dwGg5gkYXwxTAzwyn+tPDigIiA=
   dependencies:
     clone "^2.1.2"
+    less "^4.1.1"
     less-loader "^7.3.0"
     less-vars-to-js "^1.3.0"
     null-loader "^4.0.1"
