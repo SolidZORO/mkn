@@ -36,7 +36,7 @@
     "react-dom": "17.0.1",
     "react-helmet-async": "^1.0.7",
     "react-icons": "^4.1.0",
-    "react-use": "^17.0.1"
+    "react-use": "^17.1.0"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
@@ -46,8 +46,8 @@
     "@types/node": "^14.14.22",
     "@types/prettier": "^2.1.6",
     "@types/react": "^17.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.14.1",
-    "@typescript-eslint/parser": "^4.14.1",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
     "babel-plugin-import": "^1.13.3",
     "babel-plugin-module-resolver": "^4.0.0",
     "commitlint": "^11.0.0",
