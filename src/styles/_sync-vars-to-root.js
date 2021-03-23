@@ -1,7 +1,8 @@
 const fs = require('fs');
 // const mkdirp = require('mkdirp');
 
-const vars = fs.readFileSync('./variables.less', 'utf-8');
+// Avoid too long formatting
+const vars = fs.readFileSync('./variables.less', 'utf-8').replace(/,\n/g, ',');
 
 const matchs = vars.match(/^@.*/gm);
 
@@ -12,7 +13,7 @@ const allVars = matchs.map((m) => {
   if (mv && mv[1]) return mv[1];
 });
 
-const HEADER = `@import './variables.less';
+const HEADER = `@import '/src/styles/variables.less';
 
 :root {
 `;
