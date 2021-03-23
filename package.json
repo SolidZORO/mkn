@@ -8,7 +8,7 @@
   "scripts": {
     "-------------------------------- LINT ----": "----",
     "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
-    "fix": "yarn run lint-js --fix",
+    "fix": "yarn lint --fix",
     "tsc-check": "tsc -v && tsc --noEmit",
     "format": "prettier --write src/**/*.ts{,x}",
     "-------------------------------- TOOL ----": "----",
