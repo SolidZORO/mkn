@@ -15,4 +15,8 @@ module.exports = withAntdLess({
   webpack(config) {
     return config;
   },
+  // NextFuture
+  future: {
+    webpack5: true,
+  },
 });
