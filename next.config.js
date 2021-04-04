@@ -2,6 +2,9 @@
 const withAntdLess = require('next-plugin-antd-less');
 
 module.exports = withAntdLess({
+  modifyVars: {
+    '@THEME--DARK': 'theme-dark',
+  },
   lessVarsFilePath: './src/styles/variables.less',
   cssLoaderOptions: {
     esModule: false,
@@ -15,6 +18,7 @@ module.exports = withAntdLess({
   webpack(config) {
     return config;
   },
+
   // NextFuture
   future: {
     // webpack5: true,
