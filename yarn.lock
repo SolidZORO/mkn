@@ -3308,15 +3308,14 @@ needle@^2.5.2:
     iconv-lite "^0.4.4"
     sax "^1.2.4"
 
-next-plugin-antd-less@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npm.taobao.org/next-plugin-antd-less/download/next-plugin-antd-less-1.0.1.tgz#d2180998a926a79bf7b82dd873e7667be6a978be"
-  integrity sha1-0hgJmKkmp5v3uC3Yc+dme+apeL4=
+next-plugin-antd-less@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/next-plugin-antd-less/download/next-plugin-antd-less-1.0.2.tgz#560e39edb9692a841264aca672746843d5e18b68"
+  integrity sha1-Vg457blpKoQSZKymcnRoQ9Xhi2g=
   dependencies:
     clone "^2.1.2"
     less "^4.1.1"
     less-loader "^7.3.0"
-    less-vars-to-js "^1.3.0"
     null-loader "^4.0.1"
 
 next@10.1.3:
