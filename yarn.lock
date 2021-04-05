@@ -2451,7 +2451,7 @@ human-signals@^1.1.1:
   resolved "https://registry.npm.taobao.org/human-signals/download/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
   integrity sha1-xbHNFPUK6uCatsWf5jujOV/k36M=
 
-husky@6:
+husky@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npm.taobao.org/husky/download/husky-6.0.0.tgz#810f11869adf51604c32ea577edbc377d7f9319e"
   integrity sha1-gQ8RhprfUWBMMupXftvDd9f5MZ4=
@@ -3273,10 +3273,10 @@ needle@^2.5.2:
     iconv-lite "^0.4.4"
     sax "^1.2.4"
 
-next-plugin-antd-less@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.npm.taobao.org/next-plugin-antd-less/download/next-plugin-antd-less-1.0.4.tgz#30f8951f58897094af5bf8f0233f65e769512dc1"
-  integrity sha1-MPiVH1iJcJSvW/jwIz9l52lRLcE=
+next-plugin-antd-less@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npm.taobao.org/next-plugin-antd-less/download/next-plugin-antd-less-1.0.5.tgz#9a2b282296916ce67338f67a897ddc1a3c44f386"
+  integrity sha1-misoIpaRbOZzOPZ6iX3cGjxE84Y=
   dependencies:
     clone "^2.1.2"
     less "^4.1.1"
