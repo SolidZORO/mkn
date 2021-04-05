@@ -3308,10 +3308,10 @@ needle@^2.5.2:
     iconv-lite "^0.4.4"
     sax "^1.2.4"
 
-next-plugin-antd-less@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npm.taobao.org/next-plugin-antd-less/download/next-plugin-antd-less-1.0.2.tgz#560e39edb9692a841264aca672746843d5e18b68"
-  integrity sha1-Vg457blpKoQSZKymcnRoQ9Xhi2g=
+next-plugin-antd-less@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npm.taobao.org/next-plugin-antd-less/download/next-plugin-antd-less-1.0.3.tgz#8efdd8fcf292df00b2a236e2b2ebbfccac5e7202"
+  integrity sha1-jv3Y/PKS3wCyojbisuu/zKxecgI=
   dependencies:
     clone "^2.1.2"
     less "^4.1.1"
