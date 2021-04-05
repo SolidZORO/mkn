@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+#https://github.com/azz/pretty-quick
+yarn pretty-quick --staged
+
+# https://github.com/okonet/lint-staged#configuration.
+yarn lint-staged
