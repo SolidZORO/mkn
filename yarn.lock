@@ -2911,13 +2911,6 @@ less-loader@^7.3.0:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
 
-less-vars-to-js@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.npm.taobao.org/less-vars-to-js/download/less-vars-to-js-1.3.0.tgz#c322cf43a3c8fc3fab655da3e51a14c1499ab571"
-  integrity sha1-wyLPQ6PI/D+rZV2j5RoUwUmatXE=
-  dependencies:
-    strip-json-comments "^2.0.1"
-
 less@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npm.taobao.org/less/download/less-4.1.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fless%2Fdownload%2Fless-4.1.1.tgz#15bf253a9939791dc690888c3ff424f3e6c7edba"
@@ -3308,10 +3301,10 @@ needle@^2.5.2:
     iconv-lite "^0.4.4"
     sax "^1.2.4"
 
-next-plugin-antd-less@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.npm.taobao.org/next-plugin-antd-less/download/next-plugin-antd-less-1.0.3.tgz#8efdd8fcf292df00b2a236e2b2ebbfccac5e7202"
-  integrity sha1-jv3Y/PKS3wCyojbisuu/zKxecgI=
+next-plugin-antd-less@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npm.taobao.org/next-plugin-antd-less/download/next-plugin-antd-less-1.0.4.tgz#30f8951f58897094af5bf8f0233f65e769512dc1"
+  integrity sha1-MPiVH1iJcJSvW/jwIz9l52lRLcE=
   dependencies:
     clone "^2.1.2"
     less "^4.1.1"
@@ -5093,11 +5086,6 @@ strip-indent@^3.0.0:
   integrity sha1-wy4c7pQLazQyx3G8LFS8znPNMAE=
   dependencies:
     min-indent "^1.0.0"
-
-strip-json-comments@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npm.taobao.org/strip-json-comments/download/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
-  integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
 strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   version "3.1.1"
