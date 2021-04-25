@@ -8,6 +8,7 @@ import { MasterLayout } from '@/layouts';
 import { DISABLE_SSR_TRANSITION } from '@/pages/_document';
 import { isServer } from '@/utils';
 
+// import '@/styles/global.less';
 require('@/styles/global.less');
 
 Spin.setDefaultIndicator(
