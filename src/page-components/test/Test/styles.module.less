@@ -1,0 +1,23 @@
+.comp-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.image-bg {
+  display: table;
+  width: 200px;
+  //width: 100%;
+  height: 200px;
+  margin: 0 auto;
+
+  //background-color: red;
+  background-image: url('./image.jpg');
+}
+
+// DARK-MODE
+.comp-wrapper--always-dark-mode,
+:global(.@{THEME--DARK}) .comp-wrapper {
+}
