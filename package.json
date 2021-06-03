@@ -30,7 +30,7 @@
     "axios": "^0.21.0",
     "classnames": "^2.3.1",
     "css-loader": "^5.2.6",
-    "next": "10.2.3",
+    "next": "10.2.0",
     "next-plugin-antd-less": "^1.2.2",
     "normalize.css": "^8.0.1",
     "react": "17.0.2",
