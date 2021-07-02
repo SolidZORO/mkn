@@ -1,0 +1,59 @@
+@import '/src/styles/variables.less';
+@import '/src/styles/mixin.less';
+
+.comp-wrapper {
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  .fade-in-opacity();
+}
+
+.comp-wrapper--lazy {
+  position: absolute;
+  right: 0;
+  top: 0;
+  justify-content: flex-end;
+  place-items: flex-end;
+  padding: 5px;
+}
+
+.comp-wrapper--fullscreen {
+  height: 95vh;
+}
+
+.spin {
+}
+
+.spin-size--small {
+  svg {
+    @w: 20px;
+    width: @w;
+    height: @w;
+  }
+}
+
+.spin-size--default {
+  svg {
+    margin: -11px !important;
+
+    @w: 24px;
+    width: @w;
+    height: @w;
+  }
+}
+
+.spin-size--large {
+  svg {
+    @w: 36px;
+    width: @w;
+    height: @w;
+  }
+}
+
+// DARK-MODE--COMP
+.comp-wrapper--alwaysDarkMode,
+:global(.@{THEME--DARK}) .comp-wrapper {
+  color: var(--primary-color);
+}

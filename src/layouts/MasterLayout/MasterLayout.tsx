@@ -1,32 +1,28 @@
 import cx from 'classnames';
 import React from 'react';
-import { HeaderNavbar, FooterNav } from '@/components';
+
+import { IRouteProps } from '@/interfaces';
+import { FooterNav, HeaderNavbar } from '@/components';
 
 import styles from './styles.module.less';
 
 export interface IProps {
-  children: React.ReactNode;
+  mainComp: any;
+  routeProps?: IRouteProps;
   //
   disableHeader?: boolean;
   disableFooter?: boolean;
-  //
-  className?: string;
-  style?: React.CSSProperties;
-  alwaysDarkMode?: boolean;
 }
 
 export const MasterLayout: React.FC<IProps> = (props) => (
   <div
-    id="g-layout-wrapper--master"
+    id={`g-layout--${MasterLayout?.displayName}`}
     className={cx(
-      styles['layout-wrapper'],
-      { [styles['layout-wrapper--always-dark-mode']]: props.alwaysDarkMode },
-      props.className,
-      'g-layout-wrapper--master',
+      styles['comp-wrapper'],
+      `g-comp--${MasterLayout?.displayName}`,
     )}
-    style={props.style}
   >
-    {props.disableHeader ? null : (
+    {props?.disableHeader ? null : (
       <div className={cx(styles['layout-header'], 'g-layout-header--master')}>
         <HeaderNavbar />
       </div>
@@ -35,10 +31,10 @@ export const MasterLayout: React.FC<IProps> = (props) => (
     <div
       className={cx(styles['layout-container'], 'g-layout-container--master')}
     >
-      {props.children}
+      <props.mainComp routeProps={props?.routeProps} />
     </div>
 
-    {props.disableFooter ? null : (
+    {props?.disableFooter ? null : (
       <div className={cx(styles['layout-footer'], 'g-layout-footer--master')}>
         <FooterNav />
       </div>

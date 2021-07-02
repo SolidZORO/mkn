@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import React from 'react';
 
-import { IPageProps } from '@/interfaces';
+import { IPageBaseProps } from '@/interfaces';
 import { HtmlMeta, PageContainer } from '@/components';
 
 import styles from './styles.module.less';
@@ -24,11 +24,7 @@ require('./non-module-less.less');
 // Same as 👆 above
 // require('./non-module-css.css');
 
-interface IProps extends IPageProps {
-  className?: string;
-  style?: React.CSSProperties;
-  alwaysDarkMode?: boolean;
-}
+interface IProps extends IPageBaseProps {}
 
 export const Test: React.FC<IProps> = (props) => (
   <PageContainer className={cx(styles['comp-wrapper'], props.className)}>

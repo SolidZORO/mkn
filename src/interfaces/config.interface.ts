@@ -1,6 +1,7 @@
 export interface IDotEnv {
-  NEXT_PUBLIC_SITE_NAME?: string;
-  // NEXT_PUBLIC_BUILD_DATA?: IBuild;
+  // PUBLIC_URL: string;
+  //
+  NEXT_PUBLIC_APP_NAME: string;
 }
 
 export interface IBuild {

@@ -3,15 +3,19 @@ import cx from 'classnames';
 import { Button } from 'antd';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { FiMoon, FiPercent, FiTriangle } from 'react-icons/fi';
-import { ICompBaseProps } from '@/interfaces';
+import { FiPercent, FiMoon, FiTriangle } from 'react-icons/fi';
 
 import styles from './style.module.less';
 
-interface IProps extends ICompBaseProps {}
+interface IProps {
+  //
+  className?: string;
+  style?: React.CSSProperties;
+  alwaysDarkMode?: boolean;
+}
 
 export const HeaderNavbar: React.FC<IProps> = (props) => {
-  const { pathname, route, query } = useRouter();
+  const router = useRouter();
 
   const navs = [
     { to: '/', icon: <FiTriangle />, exact: true },
@@ -28,8 +32,7 @@ export const HeaderNavbar: React.FC<IProps> = (props) => {
     <div
       className={cx(
         styles['comp-wrapper'],
-        { [styles['comp-wrapper--alwaysDarkMode']]: props.alwaysDarkMode },
-        `g-comp--${HeaderNavbar.displayName}`,
+        { [styles['comp-wrapper--always-dark-mode']]: props.alwaysDarkMode },
         props.className,
       )}
       style={props.style}
@@ -39,8 +42,9 @@ export const HeaderNavbar: React.FC<IProps> = (props) => {
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a
             className={cx(styles['nav-link'], {
-              [styles['nav-link--active']]:
-                pathname === nav.active || pathname === nav.to,
+              [styles['nav-link--active']]: nav.active
+                ? router.pathname === nav.active
+                : router.pathname === nav.to,
             })}
           >
             <Button type="ghost" className={styles['nav-button']}>

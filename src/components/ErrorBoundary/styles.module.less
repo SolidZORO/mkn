@@ -1,3 +1,5 @@
+@import '/src/styles/variables.less';
+
 .error-boundary-comp-wrapper {
   position: relative;
   display: flex;
@@ -70,8 +72,8 @@
   }
 }
 
-// DARK-MODE
-body .error-boundary-comp-wrapper--always-dark-mode,
+// DARK-MODE--COMP
+body .error-boundary-comp-wrapper--alwaysDarkMode,
 :global(.@{THEME--DARK}) .error-boundary-comp-wrapper {
   .title,
   .error-info {

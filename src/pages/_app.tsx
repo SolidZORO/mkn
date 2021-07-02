@@ -1,25 +1,20 @@
 import React, { useEffect } from 'react';
 import { Spin } from 'antd';
-import { CgSpinner as Spiner } from 'react-icons/cg';
 import { HelmetProvider } from 'react-helmet-async';
+// import { IconContext } from 'react-icons';
 
-import { ErrorBoundary } from '@/components';
+import { ErrorBoundary, LoadingSpinner } from '@/components';
 import { MasterLayout } from '@/layouts';
 import { DISABLE_SSR_TRANSITION } from '@/pages/_document';
 import { isServer } from '@/utils';
 
-// import '@/styles/global.less';
+// import '@/styles/rcicon.css';
+
 require('@/styles/global.less');
 
-Spin.setDefaultIndicator(
-  <Spiner className="icon-spin" style={{ fontSize: '200%' }} />,
-);
+Spin.setDefaultIndicator(<LoadingSpinner />);
 
 export default function CustomApp({ Component, pageProps }: any) {
-  // eslint-disable-next-line react/jsx-props-no-spreading
-  const componentDom = <Component {...pageProps} />;
-  const layoutDom = <MasterLayout>{componentDom}</MasterLayout>;
-
   useEffect(() => {
     // avoid CSS animation flashing
     if (!isServer()) {
@@ -33,9 +28,12 @@ export default function CustomApp({ Component, pageProps }: any) {
 
   return (
     <ErrorBoundary>
-      <div id="root">
-        <HelmetProvider>{layoutDom}</HelmetProvider>
-      </div>
+      <HelmetProvider>
+        {/* ⚠️⚠️⚠️ FK! Next.js does not support IconContext.Provider */}
+        {/* <IconContext.Provider value={{ className: 'rcicon g-rcicon' }}> */}
+        <MasterLayout mainComp={Component} routeProps={pageProps} />
+        {/* </IconContext.Provider> */}
+      </HelmetProvider>
     </ErrorBoundary>
   );
 }

@@ -14,17 +14,20 @@ interface IProps extends SpinProps {
   alwaysDarkMode?: boolean;
 }
 
-export const LazyLoadingSpin: React.FC<IProps> = (props) => (
-  <Spin
-    delay={props.delay}
-    className={cx(
-      styles['comp-wrapper'],
-      {
-        [styles['comp-wrapper--always-dark-mode']]: props.alwaysDarkMode,
-        [styles['comp-wrapper--fullscreen']]: !!props.fullscreen,
-      },
-      props.className,
-    )}
-    style={props.style}
-  />
-);
+export const LazyLoadingSpin: React.FC<IProps> = (props) => {
+  return (
+    <Spin
+      className={cx(
+        styles['comp-wrapper'],
+        {
+          [styles['comp-wrapper--alwaysDarkMode']]: props.alwaysDarkMode,
+          [styles['comp-wrapper--fullscreen']]: !!props.fullscreen,
+        },
+        `g-comp--${LazyLoadingSpin.displayName}`,
+        props.className,
+      )}
+      style={props.style}
+      delay={props.delay}
+    />
+  );
+};

@@ -1,5 +1,6 @@
 @import '/src/styles/variables.less';
 @import '/src/styles/variables-css.less';
+@import '/src/styles/animate.less';
 
 html,
 body {
@@ -19,40 +20,35 @@ html,
 body,
 #root,
 #__next,
-#app {
+.app {
   height: 100%;
 }
 
 .theme-dark {
-  //background-color: var(--primary-bg-color--dark);
-  background-color: @primary-bg-color--dark;
+  background-color: var(--primary-color-bg--dark);
   transition: all 0.5s;
 
   body {
-    background-color: @primary-bg-color--dark;
+    background-color: var(--primary-color-bg--dark);
     transition: all 0.5s;
   }
 }
 
-.icon-spin {
-  -webkit-animation: icon-spin 0.7s infinite linear;
-  animation: icon-spin 0.7s infinite linear;
+.g-icon-spin {
+  @s: 0.6s;
+  -webkit-animation: infiniteRotating @s infinite linear;
+  animation: infiniteRotating @s infinite linear;
 }
 
-@-webkit-keyframes icon-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
+//
+
+//svg[stroke='currentColor'] {
+.rcicon {
+  line-height: 1;
+  display: inline-block;
+  vertical-align: -3px;
+  font-size: 16px;
 }
 
-@keyframes icon-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
+.g-rcicon {
 }

@@ -1,9 +1,16 @@
 @import '/src/styles/variables.less';
+@import '/src/styles/mixin.less';
 
 .comp-wrapper {
   display: flex;
-  text-align: center;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.copyright {
+  display: block;
   font-size: 12px;
   line-height: 1;
   transform: scale(0.95);
@@ -22,8 +29,30 @@
   }
 }
 
-// DARK-MODE
-.comp-wrapper--always-dark-mode,
+.deps {
+  .font-size-10px();
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  transform-origin: center;
+  color: #fff;
+
+  .dep {
+    margin: 0 5px;
+
+    strong {
+      font-weight: 400;
+    }
+
+    sup {
+      transform: scale(0.7);
+      display: inline-block;
+    }
+  }
+}
+
+// DARK-MODE--COMP
+.comp-wrapper--alwaysDarkMode,
 :global(.@{THEME--DARK}) .comp-wrapper {
   color: var(--text-color--dark);
 

@@ -1,21 +1,21 @@
 import React from 'react';
 import cx from 'classnames';
 
+import { ICompBaseProps } from '@/interfaces';
+
 import styles from './style.module.less';
 
-interface IProps {
+interface IProps extends ICompBaseProps {
   icon: any;
-  //
-  className?: string;
-  style?: React.CSSProperties;
-  alwaysDarkMode?: boolean;
 }
 
-export const HugeIcon: React.FC<IProps> = (props) => (
+export const HugeIcon: React.FC<IProps> = (props) => {
+  return (
     <div
       className={cx(
         styles['comp-wrapper'],
-        { [styles['comp-wrapper--always-dark-mode']]: props.alwaysDarkMode },
+        { [styles['comp-wrapper--alwaysDarkMode']]: props.alwaysDarkMode },
+        `g-comp--${HugeIcon.displayName}`,
         props.className,
       )}
       style={props.style}
@@ -23,3 +23,4 @@ export const HugeIcon: React.FC<IProps> = (props) => (
       {props.icon}
     </div>
   );
+};

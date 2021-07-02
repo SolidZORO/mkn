@@ -1,3 +1,5 @@
+@import '/src/styles/variables.less';
+
 .comp-wrapper {
   //position: relative;
   height: 100%;
@@ -30,16 +32,12 @@
   }
 }
 
-// DARK-MODE
-.comp-wrapper--always-dark-mode,
+// DARK-MODE--COMP
+.comp-wrapper--alwaysDarkMode,
 :global(.@{THEME--DARK}) .comp-wrapper {
   .params-info {
     color: #888;
     font-size: small;
     font-weight: 400;
   }
-}
-
-:global(.@{THEME--DARK}) {
-  background-color: @primary-bg-color--dark;
 }
