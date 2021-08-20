@@ -2,7 +2,7 @@ import cx from 'classnames';
 import React from 'react';
 
 import { IPageBaseProps } from '@/interfaces';
-import { HtmlMeta, LazyLoadingSpin, PageContainer } from '@/components';
+import { HtmlMeta, LazyLoadingSpin, PageWrapper } from '@/components';
 
 import styles from './styles.module.less';
 
@@ -10,7 +10,7 @@ interface IProps extends IPageBaseProps {}
 
 export const TestLazyLoadingSpin: React.FC<IProps> = (props) => {
   return (
-    <PageContainer
+    <PageWrapper
       className={cx(
         styles['comp-wrapper'],
         { [styles['comp-wrapper--alwaysDarkMode']]: props.alwaysDarkMode },
@@ -23,6 +23,6 @@ export const TestLazyLoadingSpin: React.FC<IProps> = (props) => {
 
       <LazyLoadingSpin fullscreen />
       <LazyLoadingSpin style={{ color: 'red' }} />
-    </PageContainer>
+    </PageWrapper>
   );
 };

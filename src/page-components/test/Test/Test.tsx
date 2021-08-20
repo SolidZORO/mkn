@@ -2,7 +2,7 @@ import cx from 'classnames';
 import React from 'react';
 
 import { IPageBaseProps } from '@/interfaces';
-import { HtmlMeta, PageContainer } from '@/components';
+import { HtmlMeta, PageWrapper } from '@/components';
 
 import styles from './styles.module.less';
 
@@ -27,7 +27,7 @@ require('./non-module-less.less');
 interface IProps extends IPageBaseProps {}
 
 export const Test: React.FC<IProps> = (props) => (
-  <PageContainer className={cx(styles['comp-wrapper'], props.className)}>
+  <PageWrapper className={cx(styles['comp-wrapper'], props.className)}>
     <HtmlMeta title="Test" />
 
     <div className={styles['image-bg']}>IMAGE-BG</div>
@@ -37,5 +37,5 @@ export const Test: React.FC<IProps> = (props) => (
 
     <div className="test-non-module-less">TEST-NON-MODULE LESS</div>
     <div className="test-non-module-css">TEST-NON-MODULE CSS</div>
-  </PageContainer>
+  </PageWrapper>
 );

@@ -3,7 +3,7 @@ import React from 'react';
 import { FiTriangle } from 'react-icons/fi';
 
 import { IPageBaseProps } from '@/interfaces';
-import { HtmlMeta, HugeIcon, PageContainer } from '@/components';
+import { HtmlMeta, HugeIcon, PageWrapper } from '@/components';
 
 import styles from './styles.module.less';
 
@@ -11,7 +11,7 @@ interface IProps extends IPageBaseProps {}
 
 export const Home: React.FC<IProps> = (props) => {
   return (
-    <PageContainer
+    <PageWrapper
       className={cx(
         styles['comp-wrapper'],
         { [styles['comp-wrapper--alwaysDarkMode']]: props.alwaysDarkMode },
@@ -23,6 +23,6 @@ export const Home: React.FC<IProps> = (props) => {
       <HtmlMeta title={props.routeProps?.name} />
 
       <HugeIcon icon={<FiTriangle />} />
-    </PageContainer>
+    </PageWrapper>
   );
 };
