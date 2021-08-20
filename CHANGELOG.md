@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/SolidZORO/mkn/compare/v0.2.0...v0.2.1) (2021-08-20)
+
+
+### Refactor
+
+* rename PageContainer --> PageWrapper ([ae7a9e2](https://github.com/SolidZORO/mkn/commit/ae7a9e24e5df1090d520598b8474109c0b680256))
+
 ## [0.2.0](https://github.com/SolidZORO/mkn/compare/v0.1.3...v0.2.0) (2021-07-02)
 
 
