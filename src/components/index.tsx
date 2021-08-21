@@ -1,4 +1,4 @@
-/* eslint-disable max-len */
+/* eslint-disable max-len, import/no-cycle */
 export { LazyLoadingSpin } from './LazyLoadingSpin/LazyLoadingSpin';
 export { HeaderNavbar } from './HeaderNavbar/HeaderNavbar';
 export { HtmlMeta } from './HtmlMeta/HtmlMeta';
