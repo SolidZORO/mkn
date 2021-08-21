@@ -1888,10 +1888,10 @@ eslint-config-prettier@^8.3.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.3.0.tgz#f7471b20b6fe8a9a9254cc684454202886a2dd7a"
   integrity sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==
 
-eslint-config-qcolate@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-qcolate/-/eslint-config-qcolate-1.2.2.tgz#89fd1bb56bae014ce8b078045c25f247e444095f"
-  integrity sha512-qsKghxh9RTIafOLl1gQH4Bugz7/OvZ7RYAOkFfs/YvRR+yvuThglwRYM+MHizPqeXIjPUQH18k4itclyx4Y1CA==
+eslint-config-qcolate@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-qcolate/-/eslint-config-qcolate-1.2.3.tgz#cfb44835d30203a60411effede22c0181e61ef30"
+  integrity sha512-F1hDg4Nr+JYVkoVXZn4o66WrVY7hX+QXFCyScLNH6hqwBO9TJd9tyfAXCxt3WiboG7RX8aTCxTw63YokGmfW4A==
 
 eslint-import-resolver-node@^0.3.4:
   version "0.3.4"
