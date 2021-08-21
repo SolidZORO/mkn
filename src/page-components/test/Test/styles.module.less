@@ -1,24 +1,16 @@
+@import '/src/styles/variables.less';
+@import '/src/styles/mixin.less';
+
 .comp-wrapper {
   position: relative;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  place-items: center;
-  flex-direction: column;
+  padding: 20px;
 }
 
-.image-bg {
-  display: table;
-  width: 200px;
-  //width: 100%;
-  height: 200px;
-  margin: 0 auto;
-
-  //background-color: red;
-  background-image: url('./image.jpg');
+a {
+  display: block;
 }
 
 // DARK-MODE--COMP
-.comp-wrapper--always-dark-mode,
+.comp-wrapper--alwaysDarkMode,
 :global(.@{THEME--DARK}) .comp-wrapper {
 }

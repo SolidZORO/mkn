@@ -12,4 +12,9 @@ module.exports = {
     __DEV__: true,
     __PROD__: true,
   },
+  //
+  // 0 (off) / 1 (warn) / 2 (error)
+  rules: {
+    'jsx-a11y/anchor-is-valid': 0,
+  },
 };

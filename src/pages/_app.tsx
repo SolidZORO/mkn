@@ -26,12 +26,16 @@ export default function CustomApp({ Component, pageProps }: any) {
     }
   }, []);
 
+  const layoutDom = Component.getLayout || (
+    <MasterLayout mainComp={Component} routeProps={pageProps} />
+  );
+
   return (
     <ErrorBoundary>
       <HelmetProvider>
         {/* ⚠️⚠️⚠️ FK! Next.js does not support IconContext.Provider */}
         {/* <IconContext.Provider value={{ className: 'rcicon g-rcicon' }}> */}
-        <MasterLayout mainComp={Component} routeProps={pageProps} />
+        {layoutDom}
         {/* </IconContext.Provider> */}
       </HelmetProvider>
     </ErrorBoundary>

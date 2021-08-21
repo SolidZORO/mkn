@@ -1,7 +1,8 @@
 /* eslint-disable */
+const withPlugins = require('next-compose-plugins');
 const withAntdLess = require('next-plugin-antd-less');
 
-module.exports = withAntdLess({
+const pluginAntdLess = withAntdLess({
   // modifyVars: {
   //   '@THEME--DARK': 'theme-dark',
   // },
@@ -13,12 +14,15 @@ module.exports = withAntdLess({
   //     mode: 'local',
   //   },
   // },
+});
 
-  // Other NextConfig Here...
+module.exports = withPlugins([[pluginAntdLess]], {
   webpack(config) {
     return config;
   },
-
+  // images: {
+  //   disableStaticImages: true,
+  // },
   // NextFuture
   // future: {
   //   webpack5: true,
