@@ -1,5 +1,5 @@
 import React from 'react';
-import { IRouteProps } from '@/interfaces';
+import { IRouteProps } from '@/interfaces/router.interface';
 
 export interface IPageBaseProps {
   routeProps?: IRouteProps;
