@@ -1,35 +1,39 @@
+/* eslint-disable max-len */
 import cx from 'classnames';
 import React from 'react';
-// import { Spin } from 'antd';
 
 import { IPageBaseProps } from '@/interfaces';
-import { HtmlMeta, LazyLoadingSpin, PageWrapper } from '@/components';
+import { HtmlMeta, PageWrapper } from '@/components';
 import { TestLayout } from '@/layouts';
+
+import TestSvg from './svgs/test.svg';
+import PlaySvg from './svgs/play.svg';
 
 import styles from './styles.module.less';
 
 interface IProps extends IPageBaseProps {}
 
-export const TestLazyLoadingSpin: React.FC<IProps> = (props) => {
+export const TestSvgImage: React.FC<IProps> = (props) => {
   return (
     <PageWrapper
       className={cx(
         styles['comp-wrapper'],
         { [styles['comp-wrapper--alwaysDarkMode']]: props.alwaysDarkMode },
-        `g-comp--${TestLazyLoadingSpin.displayName}`,
+        `g-comp--${TestSvgImage.displayName}`,
         props.className,
       )}
       style={props.style}
     >
       <HtmlMeta title={props.routeProps?.name} />
 
-      <h2>TestLazyLoadingSpin</h2>
+      <h2>TestSvg</h2>
+      <TestSvg />
 
-      <LazyLoadingSpin fullscreen />
-      <LazyLoadingSpin style={{ color: 'red' }} />
+      <h2>PlaySvg</h2>
+      <PlaySvg />
     </PageWrapper>
   );
 };
 
 // @ts-ignore
-TestLazyLoadingSpin.getLayout = <TestLayout mainComp={TestLazyLoadingSpin} />;
+TestSvgImage.getLayout = <TestLayout mainComp={TestSvgImage} />;

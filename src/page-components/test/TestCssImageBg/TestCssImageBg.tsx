@@ -6,7 +6,6 @@ import { HtmlMeta, PageWrapper } from '@/components';
 import { TestLayout } from '@/layouts';
 
 import styles from './styles.module.less';
-import stylesTest from './styles-test.module.css';
 
 // ❌ is not work
 // Please use require
@@ -32,9 +31,7 @@ export const TestCssImageBg: React.FC<IProps> = (props) => (
   <PageWrapper className={cx(styles['comp-wrapper'], props.className)}>
     <HtmlMeta title="Test" />
 
-    <div className={cx(styles['image-bg'], stylesTest['g-mod--image-bg'])}>
-      IMAGE-BG
-    </div>
+    <div className={cx(styles['image-bg'])}>IMAGE-BG</div>
 
     <br />
     <br />

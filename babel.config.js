@@ -7,6 +7,7 @@ module.exports = function (api) {
     plugins: [
       ['import', { libraryName: 'antd', style: true }],
       ['module-resolver', { alias: { '@': './src' } }],
+      ['inline-react-svg'],
       ['add-react-displayname'],
     ],
   };

@@ -29,6 +29,10 @@ export const Test: React.FC<IProps> = (props) => (
     <Link href="/test/lazy-loading-spin">
       <a>TestLazyLoadingSpin</a>
     </Link>
+
+    <Link href="/test/svg-image">
+      <a>TestSvgImage</a>
+    </Link>
   </PageWrapper>
 );
 

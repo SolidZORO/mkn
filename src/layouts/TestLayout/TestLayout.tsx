@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import { IRouteProps } from '@/interfaces';
+import { FooterNav } from '@/components';
 
 import styles from './styles.module.less';
 
@@ -17,9 +18,7 @@ export const TestLayout: React.FC<IProps> = (props) => (
     id={`g-layout--${TestLayout?.displayName}`}
     className={cx(styles['comp-wrapper'], `g-comp--${TestLayout?.displayName}`)}
   >
-    <div
-      className={cx(styles['layout-container'], 'g-layout-container--blank')}
-    >
+    <div className={cx(styles['layout-container'], 'g-layout-container--test')}>
       {props.disableNav ? null : (
         <div className={styles['nav']}>
           <Link href="/test">
@@ -30,6 +29,10 @@ export const TestLayout: React.FC<IProps> = (props) => (
       )}
 
       <props.mainComp routeProps={props?.routeProps} />
+
+      <div className={cx(styles['layout-footer'], 'g-layout-footer--test')}>
+        <FooterNav />
+      </div>
     </div>
   </div>
 );
