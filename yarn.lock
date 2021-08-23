@@ -3211,12 +3211,14 @@ language-tags@^1.0.5:
   dependencies:
     language-subtag-registry "~0.3.2"
 
-less-loader@^10.0.1:
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/less-loader/-/less-loader-10.0.1.tgz#c05aaba68d00400820275f21c2ad87cb9fa9923f"
-  integrity sha512-Crln//HpW9M5CbtdfWm3IO66Cvx1WhZQvNybXgfB2dD/6Sav9ppw+IWqs/FQKPBFO4B6X0X28Z0WNznshgwUzA==
+less-loader@^7:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/less-loader/-/less-loader-7.3.0.tgz#f9d6d36d18739d642067a05fb5bd70c8c61317e5"
+  integrity sha512-Mi8915g7NMaLlgi77mgTTQvK022xKRQBIVDSyfl3ErTuBhmZBQab0mjeJjNNqGbdR+qrfTleKXqbGI4uEFavxg==
   dependencies:
     klona "^2.0.4"
+    loader-utils "^2.0.0"
+    schema-utils "^3.0.0"
 
 less@^4.1.1:
   version "4.1.1"
@@ -3645,14 +3647,14 @@ next-images@^1.8.1:
     file-loader "^6.2.0"
     url-loader "^4.1.0"
 
-next-plugin-antd-less@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/next-plugin-antd-less/-/next-plugin-antd-less-1.4.0.tgz#bb251014b9187d330d21e0b3fd3d2c4f3f3e48b3"
-  integrity sha512-6WNXFtOsqL6zolY4Du4a4SbnalXU40eq6W4IGms1DAxjAvSpw0d7YKCKCgARJ/R1QL/keaXKCPwZxTYh/uL9BQ==
+next-plugin-antd-less@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/next-plugin-antd-less/-/next-plugin-antd-less-1.4.1.tgz#48f59854cfebb9504184cf96fa0b88fc8a0c4ee4"
+  integrity sha512-yUQnlSZFg4IDg1tvTHeTQiOd1ivyXk3xe4cp4sa7Vkn9XMQfk6+a1lI+M3CzVMTNhLnneNKYs6t95Ssa3yQT3w==
   dependencies:
     clone "^2.1.2"
     less "^4.1.1"
-    less-loader "^10.0.1"
+    less-loader "^7"
     null-loader "^4.0.1"
 
 next@11.1.0:
