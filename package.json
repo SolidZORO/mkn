@@ -7,7 +7,8 @@
   "private": true,
   "scripts": {
     "-------------------------------- LINT ----": "----",
-    "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
+    "lint": "next lint",
+    "lintall": "tsc --noEmit && eslint src/**/*.ts{,x}",
     "fix": "yarn lint --fix",
     "tsc-check": "tsc -v && tsc --noEmit",
     "format": "prettier --write src/**/*.ts{,x}",
@@ -35,7 +36,7 @@
     "next": "11.1.0",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.8.1",
-    "next-plugin-antd-less": "^1.4.1",
+    "next-plugin-antd-less": "^1.4.2",
     "normalize.css": "^8.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
