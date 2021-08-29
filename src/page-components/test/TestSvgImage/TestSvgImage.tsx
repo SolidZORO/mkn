@@ -4,7 +4,6 @@ import React from 'react';
 
 import { IPageBaseProps } from '@/interfaces';
 import { HtmlMeta, PageWrapper } from '@/components';
-import { TestLayout } from '@/layouts';
 
 import TestSvg from './svgs/test.svg';
 import PlaySvg from './svgs/play.svg';
@@ -24,7 +23,7 @@ export const TestSvgImage: React.FC<IProps> = (props) => {
       )}
       style={props.style}
     >
-      <HtmlMeta title={props.routeProps?.name} />
+      <HtmlMeta title={props.pageProps?.name} />
 
       <h2>TestSvg</h2>
       <TestSvg />
@@ -34,6 +33,3 @@ export const TestSvgImage: React.FC<IProps> = (props) => {
     </PageWrapper>
   );
 };
-
-// @ts-ignore
-TestSvgImage.getLayout = <TestLayout mainComp={TestSvgImage} />;

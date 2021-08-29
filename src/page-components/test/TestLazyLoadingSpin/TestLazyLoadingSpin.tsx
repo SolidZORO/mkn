@@ -1,10 +1,8 @@
 import cx from 'classnames';
 import React from 'react';
 // import { Spin } from 'antd';
-
 import { IPageBaseProps } from '@/interfaces';
 import { HtmlMeta, LazyLoadingSpin, PageWrapper } from '@/components';
-import { TestLayout } from '@/layouts';
 
 import styles from './styles.module.less';
 
@@ -21,7 +19,7 @@ export const TestLazyLoadingSpin: React.FC<IProps> = (props) => {
       )}
       style={props.style}
     >
-      <HtmlMeta title={props.routeProps?.name} />
+      <HtmlMeta title={props.pageProps?.name} />
 
       <h2>TestLazyLoadingSpin</h2>
 
@@ -30,6 +28,3 @@ export const TestLazyLoadingSpin: React.FC<IProps> = (props) => {
     </PageWrapper>
   );
 };
-
-// @ts-ignore
-TestLazyLoadingSpin.getLayout = <TestLayout mainComp={TestLazyLoadingSpin} />;

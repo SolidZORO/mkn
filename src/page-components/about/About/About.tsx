@@ -20,7 +20,7 @@ export const About: React.FC<IProps> = (props) => {
       )}
       style={props.style}
     >
-      <HtmlMeta title={props.routeProps?.name} />
+      <HtmlMeta title={props.pageProps?.name} />
 
       <HugeIcon icon={<FiPercent />} />
     </PageWrapper>

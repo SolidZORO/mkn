@@ -3,7 +3,6 @@ import React from 'react';
 
 import { IPageBaseProps } from '@/interfaces';
 import { HtmlMeta, PageWrapper } from '@/components';
-import { TestLayout } from '@/layouts';
 
 import styles from './styles.module.less';
 
@@ -29,7 +28,7 @@ interface IProps extends IPageBaseProps {}
 
 export const TestCssImageBg: React.FC<IProps> = (props) => (
   <PageWrapper className={cx(styles['comp-wrapper'], props.className)}>
-    <HtmlMeta title="Test" />
+    <HtmlMeta title={props.pageProps?.name} />
 
     <div className={cx(styles['image-bg'])}>IMAGE-BG</div>
 
@@ -40,6 +39,3 @@ export const TestCssImageBg: React.FC<IProps> = (props) => (
     <div className="test-non-module-css">TEST-NON-MODULE CSS</div>
   </PageWrapper>
 );
-
-// @ts-ignore
-TestCssImageBg.getLayout = <TestLayout mainComp={TestCssImageBg} />;

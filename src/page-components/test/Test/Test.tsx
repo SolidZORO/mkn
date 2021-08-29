@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 import { IPageBaseProps } from '@/interfaces';
 import { HtmlMeta, PageWrapper } from '@/components';
-import { TestLayout } from '@/layouts';
 
 import styles from './styles.module.less';
 
@@ -20,7 +19,7 @@ export const Test: React.FC<IProps> = (props) => (
     )}
     style={props.style}
   >
-    <HtmlMeta title="Test" />
+    <HtmlMeta title={props.pageProps?.name} />
 
     <Link href="/test/css-image-bg">
       <a>TestCssImageBg</a>
@@ -35,6 +34,3 @@ export const Test: React.FC<IProps> = (props) => (
     </Link>
   </PageWrapper>
 );
-
-// @ts-ignore
-Test.getLayout = <TestLayout mainComp={Test} disableNav />;

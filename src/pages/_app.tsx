@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
 import { Spin } from 'antd';
 import { HelmetProvider } from 'react-helmet-async';
+import { Router } from 'next/router';
 // import { IconContext } from 'react-icons';
 
 import { ErrorBoundary, LoadingSpinner } from '@/components';
-import { MasterLayout } from '@/layouts';
+import { MasterLayout, TestLayout } from '@/layouts';
 import { DISABLE_SSR_TRANSITION } from '@/pages/_document';
 import { isServer } from '@/utils';
+import { ILayout } from '@/interfaces/jsx.interface';
 
 // import '@/styles/rcicon.css';
 
@@ -14,9 +16,22 @@ require('@/styles/global.less');
 
 Spin.setDefaultIndicator(<LoadingSpinner />);
 
-export default function CustomApp({ Component, pageProps }: any) {
-  useEffect(() => {
-    // avoid CSS animation flashing
+export interface ICustomApp {
+  Component: React.FC & {
+    getLayout: any;
+  };
+  pageProps: {
+    layout?: ILayout;
+    name?: string;
+  };
+  router: Router & {
+    name?: string;
+  };
+  err?: Error;
+}
+
+export default function CustomApp(props: ICustomApp) {
+  const avoidCssAnimationFlashing = () => {
     if (!isServer()) {
       const disableTransitionDom = document.getElementById(
         DISABLE_SSR_TRANSITION,
@@ -24,18 +39,40 @@ export default function CustomApp({ Component, pageProps }: any) {
 
       if (disableTransitionDom) disableTransitionDom.remove();
     }
+  };
+
+  useEffect(() => {
+    avoidCssAnimationFlashing();
   }, []);
 
-  const layoutDom = Component.getLayout || (
-    <MasterLayout mainComp={Component} routeProps={pageProps} />
-  );
+  let layoutDom = null;
+
+  if (props.pageProps?.layout === 'master') {
+    layoutDom = (
+      <MasterLayout
+        mainComp={props.Component}
+        router={props.router}
+        pageProps={props.pageProps}
+      />
+    );
+  }
+
+  if (props.pageProps?.layout === 'test') {
+    layoutDom = (
+      <TestLayout
+        mainComp={props.Component}
+        router={props.router}
+        pageProps={props.pageProps}
+      />
+    );
+  }
 
   return (
     <ErrorBoundary>
       <HelmetProvider>
         {/* ⚠️⚠️⚠️ FK! Next.js does not support IconContext.Provider */}
         {/* <IconContext.Provider value={{ className: 'rcicon g-rcicon' }}> */}
-        {layoutDom}
+        {layoutDom || <span />}
         {/* </IconContext.Provider> */}
       </HelmetProvider>
     </ErrorBoundary>

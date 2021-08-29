@@ -4,6 +4,7 @@ import { FiTriangle } from 'react-icons/fi';
 
 import { IPageBaseProps } from '@/interfaces';
 import { HtmlMeta, HugeIcon, PageWrapper } from '@/components';
+import { config } from '@/configs';
 
 import styles from './styles.module.less';
 
@@ -20,7 +21,7 @@ export const Home: React.FC<IProps> = (props) => {
       )}
       style={props.style}
     >
-      <HtmlMeta title={props.routeProps?.name} />
+      <HtmlMeta title={config.pkg.name} disableSiteName />
 
       <HugeIcon icon={<FiTriangle />} />
     </PageWrapper>

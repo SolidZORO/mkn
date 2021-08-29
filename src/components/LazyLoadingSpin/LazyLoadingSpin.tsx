@@ -2,7 +2,6 @@ import React from 'react';
 import cx from 'classnames';
 import { SpinProps } from 'antd/lib/spin';
 // import { Spin } from 'antd';
-
 import styles from './style.module.less';
 
 interface IProps extends SpinProps {

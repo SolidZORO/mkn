@@ -1,15 +1,12 @@
 import cx from 'classnames';
 import React from 'react';
 import Link from 'next/link';
-
-import { IRouteProps } from '@/interfaces';
 import { FooterNav } from '@/components';
+import { ILayoutBaseProps } from '@/interfaces/jsx.interface';
 
 import styles from './styles.module.less';
 
-export interface IProps {
-  mainComp: any;
-  routeProps?: IRouteProps;
+export interface IProps extends ILayoutBaseProps {
   disableNav?: boolean;
 }
 
@@ -28,7 +25,7 @@ export const TestLayout: React.FC<IProps> = (props) => (
         </div>
       )}
 
-      <props.mainComp routeProps={props?.routeProps} />
+      <props.mainComp router={props.router} pageProps={props.pageProps} />
 
       <div className={cx(styles['layout-footer'], 'g-layout-footer--test')}>
         <FooterNav />

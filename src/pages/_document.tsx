@@ -1,10 +1,10 @@
 import React from 'react';
 import Document, {
-  Html,
+  DocumentContext,
   Head,
+  Html,
   Main,
   NextScript,
-  DocumentContext,
 } from 'next/document';
 
 // avoid CSS animation transition flashing
