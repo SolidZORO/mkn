@@ -25,7 +25,7 @@ export const TestLayout: React.FC<IProps> = (props) => (
         </div>
       )}
 
-      <props.mainComp router={props.router} pageProps={props.pageProps} />
+      <props.mainComp router={props.routeProps} pageProps={props.pageProps} />
 
       <div className={cx(styles['layout-footer'], 'g-layout-footer--test')}>
         <FooterNav />

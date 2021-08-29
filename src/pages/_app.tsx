@@ -24,9 +24,7 @@ export interface ICustomApp {
     layout?: ILayout;
     name?: string;
   };
-  router: Router & {
-    name?: string;
-  };
+  routeProps: Router;
   err?: Error;
 }
 
@@ -51,7 +49,7 @@ export default function CustomApp(props: ICustomApp) {
     layoutDom = (
       <MasterLayout
         mainComp={props.Component}
-        router={props.router}
+        routeProps={props.routeProps}
         pageProps={props.pageProps}
       />
     );
@@ -61,7 +59,7 @@ export default function CustomApp(props: ICustomApp) {
     layoutDom = (
       <TestLayout
         mainComp={props.Component}
-        router={props.router}
+        routeProps={props.routeProps}
         pageProps={props.pageProps}
       />
     );

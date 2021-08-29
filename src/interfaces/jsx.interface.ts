@@ -3,32 +3,23 @@ import { Router } from 'next/router';
 
 export type ILayout = 'master' | 'test';
 
-export interface IPageBaseProps {
-  layout?: ILayout;
-  router: Router & {
-    name?: string;
-  };
-  pageProps?: {
-    layout: ILayout;
-    name?: string;
-  };
-  //
-  className?: string;
-  style?: React.CSSProperties;
-  alwaysDarkMode?: boolean;
-}
-
 export interface ICompBaseProps {
   className?: string;
   style?: React.CSSProperties;
   alwaysDarkMode?: boolean;
 }
 
-export interface ILayoutBaseProps {
-  mainComp: any;
-  router: Router & {
+export interface IPageBaseProps extends ICompBaseProps {
+  routeProps: Router;
+  pageProps?: {
+    layout: ILayout;
     name?: string;
   };
+}
+
+export interface ILayoutBaseProps {
+  mainComp: any;
+  routeProps: Router;
   pageProps?: any;
 }
 

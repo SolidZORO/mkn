@@ -28,7 +28,7 @@ export const MasterLayout: React.FC<IProps> = (props) => {
       <div
         className={cx(styles['layout-container'], 'g-layout-container--master')}
       >
-        <props.mainComp router={props.router} pageProps={props.pageProps} />
+        <props.mainComp router={props.routeProps} pageProps={props.pageProps} />
       </div>
 
       {props?.disableFooter ? null : (
