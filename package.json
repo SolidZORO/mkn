@@ -1,7 +1,7 @@
 {
   "name": "mkn",
   "description": "Make React Project w/ Next.js and Typescript",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "license": "MIT",
   "author": "Jason Feng <solidzoro@live.com>",
   "private": true,

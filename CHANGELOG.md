@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/SolidZORO/mkn/compare/v0.2.2...v0.2.3) (2021-08-29)
+
+
+### Features
+
+* add a TestLayout ([ad23add](https://github.com/SolidZORO/mkn/commit/ad23add93c44077608a4229f2057c91b4d41f1fc))
+* add TestSvgImage ([1e0f7f3](https://github.com/SolidZORO/mkn/commit/1e0f7f3ed9c0742fe8f9d4b3d515ed1b01e88b56))
+
+
+### Bug Fixes
+
+* compatible CRA and Next.js ([dd35914](https://github.com/SolidZORO/mkn/commit/dd359144369b84c4936fc1231cd9fbbaad0bb1de))
+* fix page name ([cf57d67](https://github.com/SolidZORO/mkn/commit/cf57d67b9f325d0660d9c2a7fec560accad50095))
+
+
+### Refactor
+
+* rename react.interface to jsx.interface ([6d3c3ac](https://github.com/SolidZORO/mkn/commit/6d3c3aca44948321293d17718a315806404e5a7a))
+* renmage roterProps ([8beb095](https://github.com/SolidZORO/mkn/commit/8beb09555f59979768f9d38d7da315adc30e9886))
+
 ### [0.2.2](https://github.com/SolidZORO/mkn/compare/v0.2.1...v0.2.2) (2021-08-21)
 
 
