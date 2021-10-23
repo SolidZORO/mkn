@@ -1,8 +1,9 @@
 /* eslint-disable max-len */
 module.exports = {
-  // https://github.com/qcolate/eslint-config-qcolate/blob/master/.eslintrc.js
+  // https://github.com/qcolate/web-configs/blob/master/packages/eslint-config/react.js
   // extends: ['airbnb', 'airbnb-typescript', 'prettier'],
-  extends: ['qcolate'],
+  extends: ['@qcolate/eslint-config'],
+  root: true,
   env: {
     browser: true,
     es2021: true,
@@ -15,6 +16,18 @@ module.exports = {
   //
   // 0 (off) / 1 (warn) / 2 (error)
   rules: {
-    'jsx-a11y/anchor-is-valid': 0,
+    'max-len': [
+      2,
+      {
+        code: 80, // (default 80)
+        ignoreComments: true,
+        ignoreTrailingComments: true,
+      },
+    ],
+    'spaced-comment': 0,
+    //
+    //
+    // Next.js
+    '@next/next/no-img-element': 0,
   },
 };

@@ -10,11 +10,7 @@ import { DISABLE_SSR_TRANSITION } from '@/pages/_document';
 import { isServer } from '@/utils';
 import { ILayout } from '@/interfaces/jsx.interface';
 
-// import '@/styles/rcicon.css';
-
 require('@/styles/global.less');
-
-Spin.setDefaultIndicator(<LoadingSpinner />);
 
 export interface ICustomApp {
   Component: React.FC & {
@@ -27,6 +23,8 @@ export interface ICustomApp {
   routeProps: Router;
   err?: Error;
 }
+
+Spin.setDefaultIndicator(<LoadingSpinner />);
 
 export default function CustomApp(props: ICustomApp) {
   const avoidCssAnimationFlashing = () => {
