@@ -22,7 +22,7 @@
 
 ## mkn ([demo](https://mkn.vercel.app/))
 
-A Simple **SSR** Scaffolding for React Projects w/ [Next.js](https://nextjs.org/) () and [Typescript](https://www.typescriptlang.org/).
+A Simple **SSR** Scaffolding for React Projects w/ [Next.js](https://nextjs.org/) and [Typescript](https://www.typescriptlang.org/).
 
 `Less` is supported by [next-plugin-antd-less](https://github.com/SolidZORO/next-plugin-antd-less).
 
