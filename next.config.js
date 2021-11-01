@@ -8,11 +8,12 @@ const pluginAntdLess = withAntdLess({
   // },
   lessVarsFilePath: './src/styles/variables.less',
   // cssLoaderOptions: {
-  //   esModule: false,
-  //   sourceMap: false,
-  //   modules: {
-  //     mode: 'local',
-  //   },
+  // esModule: false,
+  // sourceMap: false,
+  // modules: {
+  // mode: 'local',
+  // localIdentName: '[hash:2]',
+  // },
   // },
 });
 
