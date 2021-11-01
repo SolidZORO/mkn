@@ -3621,10 +3621,10 @@ next-images@^1.8.2:
     file-loader "^6.2.0"
     url-loader "^4.1.0"
 
-next-plugin-antd-less@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/next-plugin-antd-less/-/next-plugin-antd-less-1.5.0.tgz#7113c3e1b92c26c9893ade30c5a9e1de177ea4f0"
-  integrity sha512-xl1jDOFb29lCa7tji1H760HP+H/jrPCryz8xD4HUsmJpVoDT22zbNgIR4cRKjiyzaf6t0dH+pGKa2Y/A22a3Iw==
+next-plugin-antd-less@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/next-plugin-antd-less/-/next-plugin-antd-less-1.5.2.tgz#8c73d2a9f5db991a6420ca272f71a58fba2db2e6"
+  integrity sha512-zszb/enAq5icB+M0JUMhrFyE+8V2nakD0Cw8FC9zltlri4fuIPRmoh36vhol5OJKlEpFc8g5D/adyuJv4M7OUg==
   dependencies:
     clone "^2.1.2"
     less "^4.1.2"
