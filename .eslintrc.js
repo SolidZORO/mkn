@@ -3,7 +3,13 @@ module.exports = {
   // https://github.com/qcolate/web-configs/blob/master/packages/eslint-config/react.js
   // extends: ['airbnb', 'airbnb-typescript', 'prettier'],
   extends: ['@qcolate/eslint-config'],
-  root: true,
+  //
+  // TODO disabled 'next/core-web-vitals'
+  //      Plugin "import" was conflicted between ".eslintrc.js
+  //      » eslint-config-airbnb
+  //      » eslint-config-next/core-web-vitals
+  // extends: ['next/core-web-vitals', '@qcolate/eslint-config'],
+  //
   env: {
     browser: true,
     es2021: true,
