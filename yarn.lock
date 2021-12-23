@@ -3525,10 +3525,10 @@ next-images@^1.8.4:
     file-loader "^6.2.0"
     url-loader "^4.1.0"
 
-next-plugin-antd-less@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.npmmirror.com/next-plugin-antd-less/download/next-plugin-antd-less-1.6.0.tgz#ca7c0bb12bebc34c93d46c4b491bc3f14fe5bc56"
-  integrity sha512-N4rUTuiralnnJG2stHJbhJwZYzkiNf/y5I/k58EwFn96vFeLKeoI80ieeYA4HM+JNnXKXxuKLm+qomefYlQ87g==
+next-plugin-antd-less@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.npmmirror.com/next-plugin-antd-less/download/next-plugin-antd-less-1.7.0.tgz#c4f8ed2958d25dc83ff32e53f1c373cf4ec03124"
+  integrity sha512-uRpZbZ9B46AQ947LJMqIdapvo2DLH+MWT9Ua+meItYBTa1wTu2/qtBRlsBlsz8OJGbwrdR89B6wdBo7syx+XYQ==
   dependencies:
     clone "^2.1.2"
     less "^4.1.2"
