@@ -31,6 +31,7 @@ export class ErrorBoundary extends React.Component<IProps, IState> {
     this.setState({ errorInfo: err.message });
   }
 
+  // eslint-disable-next-line class-methods-use-this
   onRefresh = () => {
     window.location.href = '/';
     // window.location.reload();

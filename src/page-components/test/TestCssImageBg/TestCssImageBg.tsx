@@ -8,10 +8,10 @@ import styles from './styles.module.less';
 
 // ❌ is not work
 // Please use require
-// import './non-module-less.less';
+// import './_less.less';
 
 // ✅ is work!!!
-require('./non-module-less.less');
+// require('./_less.less');
 
 // ❌ is not work
 // Please move all global CSS imports to src/pages/_app.tsx.
@@ -22,7 +22,7 @@ require('./non-module-less.less');
 
 // ❌ is not work
 // Same as 👆 above
-// require('./non-module-css.css');
+// require('./_css.css');
 
 interface IProps extends IPageBaseProps {}
 
@@ -30,7 +30,9 @@ export const TestCssImageBg: React.FC<IProps> = (props) => (
   <PageWrapper className={cx(styles['comp-wrapper'], props.className)}>
     <HtmlMeta title={props.pageProps?.name} />
 
-    <div className={cx(styles['image-bg'])}>IMAGE-BG</div>
+    {/*<div className="image-bg--css">css</div>*/}
+    {/*<div className="image-bg--less">less</div>*/}
+    <div className={styles['image-bg--less-module']}>less module</div>
 
     <br />
     <br />

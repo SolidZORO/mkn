@@ -1,5 +1,4 @@
 @import '/src/styles/variables.less';
-@import '/src/styles/mixin.less';
 
 .comp-wrapper {
   position: relative;
@@ -10,15 +9,17 @@
   flex-direction: column;
 }
 
-.image-bg {
+.image-bg--less-module {
   display: table;
+  //width: 100%;
+  margin: 0 auto;
   width: 200px;
   height: 200px;
-  margin: 0 auto;
-  //background-image: url('./image.jpg');
+  background-image: url('./image-dir--less-module.jpg');
+  //background-image: url('image-dir.jpg');
 }
 
 // DARK-MODE--COMP
-.comp-wrapper--alwaysDarkMode,
+.comp-wrapper--always-dark-mode,
 :global(.@{THEME--DARK}) .comp-wrapper {
 }
