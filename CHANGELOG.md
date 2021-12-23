@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/SolidZORO/mkn/compare/v0.2.3...v0.3.0) (2021-12-23)
+
+
+### Features
+
+* update next-plugin-antd-less 1.7.0 ([f3b11af](https://github.com/SolidZORO/mkn/commit/f3b11af6e0d4952b608b8ea3b7c4bbd1c7932a1c))
+
 ### [0.2.3](https://github.com/SolidZORO/mkn/compare/v0.2.2...v0.2.3) (2021-08-29)
 
 
